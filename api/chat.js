@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const groqRes = await fetch('https://api.groq.com/v1/chat/completions', {
+    const groqRes = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
